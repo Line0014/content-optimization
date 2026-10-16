@@ -1,8 +1,8 @@
 :root {
-  --primary-txt: hsl(220, 40%, 40%);
+  --primary-txt: hsl(220, 40%, 34%);
   --primary-bg: hsl(220, 40%, 90%);
   --secondary-txt: hsl(220, 20%, 30%);
-  --secondary-bg: hsl(220, 20%, 80%);
+  --secondary-bgn: hsl(219, 42%, 84%);
 
 
 
@@ -10,16 +10,16 @@
   /* Named colors used by the layout */
   --color-page-bg: var(--primary-bg);
   --color-page-text: var(--primary-txt);
-  --color-panel-bg: var(--primary-txt);
+  --color-panel-bgn: var(--primary-txt);
   --color-panel-text: var(--primary-bg);
 
 
 
   
   /* Call-to-action colors */
-  --color-cta-bg: hsl(190, 90%, 60%);
-  --color-cta-text: hsl(220, 40%, 15%);
-  --color-cta-hover: hsl(190, 90%, 40%);
+  --color-cta-bgn: hsl(190, 60%, 46%);
+  --color-cta-text: hsl(220, 56%, 12%);
+  --color-cta-hover: hsl(190, 88%, 46%);
 
   --radius: 0.5rem;
 
@@ -115,7 +115,7 @@ header h2 {
   text-shadow: 0 1px 2px hsla(33, 100%, 30%, 0.45);
 
 
-  
+
 
   & > h2 {
     font-size: var(--font-xl);
