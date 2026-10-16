@@ -119,4 +119,12 @@ header h2 {
   justify-content: flex-start;
   align-self: flex-end;
   text-align: end;
+
+
+.fa-solid,
+.fas {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
 }
