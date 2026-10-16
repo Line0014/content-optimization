@@ -4,18 +4,31 @@
   --secondary-txt: hsl(220, 20%, 30%);
   --secondary-bg: hsl(220, 20%, 80%);
 
+
+
+
   /* Named colors used by the layout */
   --color-page-bg: var(--primary-bg);
   --color-page-text: var(--primary-txt);
   --color-panel-bg: var(--primary-txt);
   --color-panel-text: var(--primary-bg);
 
+
+
+  
   /* Call-to-action colors */
   --color-cta-bg: hsl(190, 90%, 60%);
   --color-cta-text: hsl(220, 40%, 15%);
   --color-cta-hover: hsl(190, 90%, 40%);
 
   --radius: 0.5rem;
+
+
+
+
+
+
+
 
   --font-xxxl: 5.61rem;
   --font-xxl: 4.209rem;
@@ -29,6 +42,9 @@
   --font-serif: 'Noto Serif', sans-serif;
   --font-mono: 'Noto Sans Mono', sans-serif;
 }
+
+
+
 
 *,
 *::after,
@@ -60,6 +76,9 @@ button {
   border-radius: var(--radius);
   cursor: pointer;
 }
+
+
+
 button:hover {
   background-color: var(--color-cta-hover);
 }
@@ -77,6 +96,9 @@ header h1 {
 header h2 {
   font-size: var(--font-lg);
 }
+
+
+
 .banner {
   margin-inline: auto;
   padding: 4rem 2rem;
@@ -91,6 +113,9 @@ header h2 {
   flex-direction: column;
   justify-content: center;
   text-shadow: 0 1px 2px hsla(33, 100%, 30%, 0.45);
+
+
+  
 
   & > h2 {
     font-size: var(--font-xl);
@@ -118,6 +143,8 @@ header h2 {
   justify-content: flex-start;
   align-items: flex-start;
 
+
+
   & > h3 {
     font-size: var(--font-lg);
     color: var(--color-panel-text);
@@ -129,9 +156,16 @@ header h2 {
     color: var(--color-cta-text);
     background-color: var(--color-cta-bg);
   }
+
+
+
 }
 .feature_box:nth-child(odd) > * {
   justify-content: flex-start;
   align-self: flex-end;
   text-align: end;
+}
+
+.feature_box > button:hover {
+  background-color: var(--color-cta-hover);
 }
