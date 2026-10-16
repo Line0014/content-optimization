@@ -130,7 +130,6 @@ main > h2 {
     font-size: var(--font-xl);
     font-weight: 500;
     color: var(--color-banner-heading);
-    text-shadow: 2px 2px 1px hsl(from var(--color-page-bg) h s l / 0.32);
   }
   & > .banner--content {
     font-size: var(--font-sm);
