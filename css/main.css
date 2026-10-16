@@ -91,10 +91,15 @@ main {
   color: var(--color-panel-text);
 }
 header h1 {
-  font-size: var(--font-xl);
+  font-size: var(--font-xxxl);
+  font-weight: 700;
 }
 header h2 {
   font-size: var(--font-lg);
+}
+main > h2 {
+  font-size: var(--font-xl);
+  font-weight: 400;
 }
 
 
@@ -119,6 +124,7 @@ header h2 {
 
   & > h2 {
     font-size: var(--font-xl);
+    font-weight: 500;
     color: var(--primary-txt);
     text-shadow: 2px 2px 1px hsl(from var(--color-page-bg) h s l / 0.32);
   }
@@ -128,6 +134,7 @@ header h2 {
   }
   & > button {
     align-self: flex-end;
+    margin-right: 1rem;
     font-size: var(--font-sm);
     color: var(--color-cta-text);
     background-color: var(--color-cta-bg);
@@ -147,10 +154,12 @@ header h2 {
 
   & > h3 {
     font-size: var(--font-lg);
+    font-weight: 400;
     color: var(--color-panel-text);
   }
   & > p {
-    color: var(--secondary-bg);
+    font-size: var(--font-xs);
+    color: var(--primary-bg);
   }
   & > button {
     color: var(--color-cta-text);
