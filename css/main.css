@@ -4,6 +4,14 @@
   --secondary-txt: hsl(220, 20%, 30%);
   --secondary-bg: hsl(220, 20%, 80%);
 
+  /* Named colors used by the layout */
+  --color-page-bg: var(--primary-bg);
+  --color-page-text: var(--primary-txt);
+  --color-panel-bg: var(--primary-txt);
+  --color-panel-text: var(--primary-bg);
+  --color-cta-bg: var(--secondary-txt);
+  --color-cta-text: var(--secondary-bg);
+
   --radius: 0.5rem;
 
   --font-xxxl: 5.61rem;
@@ -28,8 +36,8 @@
 }
 html {
   font-weight: 300;
-  color: var(--primary-txt);
-  background-color: var(--primary-bg);
+  color: var(--color-page-text);
+  background-color: var(--color-page-bg);
 }
 h1,
 h2,
@@ -41,8 +49,8 @@ pre {
   font-family: var(--font-mono);
 }
 button {
-  background-color: var(--secondary-txt);
-  color: var(--secondary-bg);
+  background-color: var(--color-cta-bg);
+  color: var(--color-cta-text);
   padding: 0.5rem 2rem;
   margin: 0.5rem 1rem 2rem 0;
   border: none;
@@ -53,8 +61,8 @@ main {
   max-width: min(90vw, 1072px);
   padding: 2rem;
   margin-inline: auto;
-  background-color: var(--primary-txt);
-  color: var(--primary-bg);
+  background-color: var(--color-panel-bg);
+  color: var(--color-panel-text);
 }
 header h1 {
   font-size: var(--font-xl);
@@ -66,7 +74,7 @@ header h2 {
   margin-inline: auto;
   padding: 4rem 2rem;
   background-image:
-    linear-gradient(135deg, hsl(from var(--primary-bg) h s l / 0.2) 0%, hsl(from var(--primary-bg) h s l / 0.72) 45%, hsl(from var(--primary-bg) h s l / 0.36) 100%),
+    linear-gradient(135deg, hsl(from var(--color-page-bg) h s l / 0.2) 0%, hsl(from var(--color-page-bg) h s l / 0.72) 45%, hsl(from var(--color-page-bg) h s l / 0.36) 100%),
     url('https://picsum.photos/id/377/1400/700');
   background-size: cover;
   background-position: center;
@@ -79,8 +87,8 @@ header h2 {
 
   & > h2 {
     font-size: var(--font-xl);
-    color: var(--secondary-txt);
-    text-shadow: 2px 2px 1px hsl(from var(--primary-bg) h s l / 0.32);
+    color: var(--color-cta-bg);
+    text-shadow: 2px 2px 1px hsl(from var(--color-page-bg) h s l / 0.32);
   }
   & > .banner--content {
     font-size: var(--font-sm);
@@ -89,13 +97,13 @@ header h2 {
   & > button {
     align-self: flex-end;
     font-size: var(--font-sm);
-    color: var(--secondary-bg);
-    background-color: var(--secondary-txt);
+    color: var(--color-cta-text);
+    background-color: var(--color-cta-bg);
   }
 }
 
 .feature_box {
-  border-block-start: 1px solid var(--primary-bg);
+  border-block-start: 1px solid var(--color-page-bg);
   padding-inline: 3rem;
   padding-block-start: 2rem;
   display: flex;
@@ -105,14 +113,14 @@ header h2 {
 
   & > h3 {
     font-size: var(--font-lg);
-    color: var(--primary-bg);
+    color: var(--color-panel-text);
   }
   & > p {
-    color: var(--secondary-bg);
+    color: var(--color-cta-text);
   }
   & > button {
-    color: var(--secondary-bg);
-    background-color: var(--secondary-txt);
+    color: var(--color-cta-text);
+    background-color: var(--color-cta-bg);
   }
 }
 .feature_box:nth-child(odd) > * {
