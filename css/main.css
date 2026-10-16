@@ -9,8 +9,11 @@
   --color-page-text: var(--primary-txt);
   --color-panel-bg: var(--primary-txt);
   --color-panel-text: var(--primary-bg);
-  --color-cta-bg: var(--secondary-txt);
-  --color-cta-text: var(--secondary-bg);
+
+  /* Call-to-action colors */
+  --color-cta-bg: hsl(190, 90%, 60%);
+  --color-cta-text: hsl(220, 40%, 15%);
+  --color-cta-hover: hsl(190, 90%, 40%);
 
   --radius: 0.5rem;
 
@@ -55,6 +58,10 @@ button {
   margin: 0.5rem 1rem 2rem 0;
   border: none;
   border-radius: var(--radius);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--color-cta-hover);
 }
 header,
 main {
@@ -87,7 +94,7 @@ header h2 {
 
   & > h2 {
     font-size: var(--font-xl);
-    color: var(--color-cta-bg);
+    color: var(--primary-txt);
     text-shadow: 2px 2px 1px hsl(from var(--color-page-bg) h s l / 0.32);
   }
   & > .banner--content {
@@ -116,7 +123,7 @@ header h2 {
     color: var(--color-panel-text);
   }
   & > p {
-    color: var(--color-cta-text);
+    color: var(--secondary-bg);
   }
   & > button {
     color: var(--color-cta-text);
